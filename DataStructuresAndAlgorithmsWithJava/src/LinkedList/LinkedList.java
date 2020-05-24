@@ -163,6 +163,21 @@ public class LinkedList<E> {
 		return true;
 	}
 	
+	public Node<E> reverse() {
+		Node<E> prev = null;
+		Node<E> next = null;
+		Node<E> current = head;
+		
+		while(current != null) {
+			next = current.next;			
+			current.next = prev;
+			prev = current;
+			current =next;
+		}
+		head = tail;
+		return head;
+	}
+	
 	
 	public class Node<E>{
 		E data;

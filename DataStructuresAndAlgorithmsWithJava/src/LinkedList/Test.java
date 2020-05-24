@@ -13,7 +13,7 @@ public class Test {
 		linkedList.remove(1);
 		linkedList.removeAt(99);
 		linkedList.removeTail();
-
+		linkedList.reverse();
 
 		linkedList.printLinkedList();
 		System.out.println(linkedList.contains(0));
